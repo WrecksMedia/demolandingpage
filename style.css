@@ -20,6 +20,7 @@ body {
 /*shared styling for hero and footer section*/
 .hero-section, .footer {
     background-color: #1F2937;
+    padding-bottom: 24px;
 }
 
 /*styling for hero section which includes the header*/
@@ -29,10 +30,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 25% 2% 25%;
-    flex-shrink: 1;
-    flex-wrap: wrap;
-    gap: 24px;
+    margin: 0 25% 0% 25%;
 }
 
 /*styling for header links*/
@@ -83,7 +81,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-basis: 160px;
+    flex-basis: 105px;
 }
 
 .rectangle {
@@ -98,14 +96,25 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 30%;
     padding: 48px;
+    margin: 0 25% 0% 25%;
 
+}
+
+
+.cta {
+    color: black;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 25% 0% 25%;
 }
 
 .footer {
     display: flex;
     justify-content: center;
+    align-items: center;
     text-align: center;
     color: #E5E7EB;
 }
