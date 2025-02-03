@@ -109,12 +109,26 @@ a {
     justify-content: space-between;
     align-items: center;
     margin: 0 25% 0% 25%;
+    padding: 1%;
+    gap: 48px;
+}
+
+.cta-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    flex-basis: 90%;
+    flex-shrink: 3;
+}
+
+.signup {
+    flex-basis: 10%;
+    flex-shrink: 1;
 }
 
 .footer {
     display: flex;
     justify-content: center;
-    align-items: center;
     text-align: center;
     color: #E5E7EB;
 }
