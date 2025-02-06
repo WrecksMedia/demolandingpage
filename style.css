@@ -1,6 +1,3 @@
-
-/*Overall styling for page*/
-
 :root {
     height: 100vh;
     width: 100%;
@@ -27,7 +24,6 @@ body {
     min-width: 100%;
 }
 
-/*shared styling for hero and footer section*/
 .hero-section, .footer {
     background-color: #1F2937;
     display: flex;
@@ -36,10 +32,8 @@ body {
 }
 
 .hero-section {
-    padding-bottom: 24px;
+    padding-bottom: 48px;
 }
-
-/*styling for hero section which includes the header*/
 
 .header, .hero {
     color: #E5E7EB;
@@ -48,6 +42,44 @@ body {
     align-items: center;
     width: 50%;
     flex-wrap: wrap;
+}
+
+.left {
+    flex: 0 1 70%;
+}
+
+.right {
+    display: flex;
+    gap: 0px 24px;
+    flex: 0 1 30%;
+}
+
+a {
+    text-decoration: none;
+    color: #E5E7EB;
+    font-size: 18px;
+    flex: 1 1 80px;
+}
+
+.hero {
+    gap: 8%;
+}
+
+.left-hero {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.right-hero {
+    flex-basis: 100px;
+    flex-grow: 1;
+}
+
+.hero-image {
+    width: 100%;
 }
 
 .maintext {
@@ -62,45 +94,15 @@ body {
 }
 
 .clickhere {
-    margin-bottom: 24px;
-}
-
-button {
     border-radius: 6px;
     border: #E5E7EB;
     border-style: solid;
     padding: 2px 12px 2px 12px;
     background-color: #3882f6;
     color: #E5E7EB;
+    flex-grow: 0 1 100%;
+    margin-bottom: 24px;
     flex-grow: 1;
-}
-
-/*styling for header links*/
-
-a {
-    text-decoration: none;
-    color: #E5E7EB;
-    font-size: 18px;
-}
-
-.right {
-    display: flex;
-    gap: 0px 12px;
-}
-
-/*styling for hero section content nesting*/
-
-.left-hero {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-basis: 500px;
-    flex-shrink: 3;
-}
-
-.right-hero {
-    flex-shrink: 1;
 }
 
 .info {
@@ -138,6 +140,15 @@ a {
     flex-direction: column;
     align-items: center;
     background-color: #E5E7EB;
+    margin: 24px 0px;
+    padding: 24px 0px;
+}
+
+.quote-right {
+    align-self: flex-end;
+    font-size: 18px;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .quote-text {
@@ -147,13 +158,9 @@ a {
     color: #1F2937;
     display: flex;
     flex-direction: column;
-    width: 35%;
-    padding: 1% 2%;
+    width: 60%;
+    padding: 1% 1%;
     flex-wrap: wrap;
-}
-
-.quote-right {
-    align-self: flex-end;
 }
 
 .cta-section {
@@ -170,29 +177,37 @@ a {
     align-items: center;
     flex-wrap: wrap;
     width: 35%;
-    padding: 0 5%;
-    margin: 0 0 1% 0;
+    padding: 1% 2% 1% 2%;
+    margin: 0 0 3% 0;
+    gap: 24px;
 }
 
 .cta-left {
-    text-align: left;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    flex-grow: 3;
-    flex-basis: 300px;
+    gap: 6px;
 }
 
 .cta-right {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-grow: 1;
+    margin-bottom: 12px;
+}
+
+.cta-header {
+    flex:  0 auto;
+}
+
+.cta-info {
+    flex-grow: 0 0 auto;
 }
 
 .button-signup {
-    width: 100px;
-    flex-grow: 1;
+    width: 60%;
 }
 
 .copyright {
